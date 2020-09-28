@@ -1,13 +1,13 @@
 {
-    "name": "yoyo/app",
-    "description": "Examples for Yoyo, a framework to easily create dynamic apps.",
-    "keywords": ["framework", "yoyo"],
-    "version": "1.0.0",
+    "name": "clickfwd/yoyo-app",
+    "description": "Yoyo demo app.",
+    "keywords": ["yoyo","framework","reactive","dynamic"],
+    "version": "0.0.1",
     "license": "MIT",
-    "homepage": "https://github.com/Clickfwd/yoyo",
+    "homepage": "https://github.com/clickfwd/yoyo-app",
     "support": {
-        "issues": "https://github.com/Clickfwd/yoyo/issues",
-        "source": "https://github.com/Clickfwd/yoyo"
+        "issues": "https://github.com/clickfwd/yoyo-app/issues",
+        "source": "https://github.com/clickfwd/yoyo-app"
     },
     "authors": [
         {
@@ -16,7 +16,8 @@
     ],
     "require": {
         "slim/slim": "4.*",
-        "slim/psr7": "^1.2"
+        "slim/psr7": "^1.2",
+        "clickfwd/yoyo": "^0.0.1"
     },
     "require-dev": {
     },
@@ -27,8 +28,8 @@
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "../yoyo"
+            "type": "vcs",
+            "url": "https://github.com/clickfwd/yoyo"
         }
     ]
 }
