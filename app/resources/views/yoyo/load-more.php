@@ -1,15 +1,12 @@
-<?php
-$rows = $results($offset, $limit);
-?>
 <div class="space-y-3" yoyo:swap="innerHTML">
 
-    <?php foreach ($rows as $row):?>
+    <?php foreach ($this->results as $row):?>
         <div class="my-3 flex flex-row items-center space-x-3 py-2 px-4 border border-gray-300 bg-gray-50 sm:rounded-md">
             <?php echo $row['title']; ?>
         </div>
     <?php endforeach; ?>
         
-    <?php if ($rows): ?>
+    <?php if ($this->results): ?>
         <div class="inline-flex rounded-md shadow-sm">
             <button
                 yoyo:vars="offset: <?php echo $offset + $limit; ?>" 

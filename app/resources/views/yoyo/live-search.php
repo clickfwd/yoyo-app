@@ -11,10 +11,10 @@
             </div>
     </form>
 
-    <?php if ($results = $find()): ?>
+    <?php if ($this->results): ?>
         <div>
         <ul class="space-y-3">
-            <?php foreach ($results as $row):?>
+            <?php foreach ($this->results as $row):?>
                 <li class="py-2 px-4 border border-gray-300 bg-gray-50 sm:rounded-md">
                     <?php echo $row['title']; ?>
                 </li>

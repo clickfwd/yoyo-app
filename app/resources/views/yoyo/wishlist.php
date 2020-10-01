@@ -3,7 +3,7 @@ $entries = require __DIR__.'/../../../test-data.php';
 $entry = $entries[$id];
 
 if (isset($liked)) {
-    $emitTo('#wishlist-counter', 'refresh', ['liked' => 1]);
+    $this->emitTo('#wishlist-counter', 'refresh', ['liked' => 1]);
 }
 
 $liked = $liked ?? false;

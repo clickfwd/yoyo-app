@@ -17,11 +17,9 @@ class LiveSearch extends Component
     public function mount()
     {
         $this->data = require __DIR__.'/../test-data.php';
-
-        return $this;
     }
 
-    public function find()
+    protected function getResultsProperty()
     {
         $results = [];
 
