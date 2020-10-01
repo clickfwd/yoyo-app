@@ -19,6 +19,7 @@
         'counter' => [
             'variables' => ['count' => 3],
         ],
+        'upload' => [],
         'nesting-parent' => [],
         'wishlist-counter' => [
             'attributes' => ['id' => 'wishlist-counter'],
