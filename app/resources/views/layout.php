@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Yoyo Demo App</title>
-    <link href="/app/resources/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
     <?php yoyo_scripts(); ?>
 </head>
 <body class="">
