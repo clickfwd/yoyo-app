@@ -7,7 +7,7 @@
     <?php endforeach; ?>
         
     <?php if ($this->results): ?>
-        <div class="inline-flex rounded-md shadow-sm">
+        <span class="inline-flex rounded-md shadow-sm">
             <button
                 yoyo:vars="offset: <?php echo $offset + $limit; ?>" 
                 yoyo:target="closest div" 
@@ -16,7 +16,7 @@
             >
                 Load more
             </button>
-    </div>    
+    </span>    
     <?php endif; ?>
 
 </div>

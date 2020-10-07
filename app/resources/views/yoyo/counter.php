@@ -1,5 +1,5 @@
 <div class="flex space-x-3">
-
+    
     <span class="inline-flex rounded-md shadow-sm">
         <button 
             yoyo:get="decrement" 

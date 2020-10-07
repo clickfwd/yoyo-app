@@ -3,5 +3,5 @@
         Automatically triggered by above component
     </p>
 
-    <p>Liked: <?php echo $liked ?? 0; ?></p>
+    <p>Liked: <?php echo $likes; ?></p>
 </div>

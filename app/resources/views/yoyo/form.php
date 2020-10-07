@@ -6,7 +6,7 @@
 
 <?php else: ?>
 
-    <form class="flex flex-col space-y-4 w-72">  
+    <form class="space-y-4 w-72">  
         <div class="mt-3">
             <div>
                 <label for="name" class="block text-sm font-medium leading-5 text-gray-700">Name</label>
@@ -42,7 +42,7 @@
             </div>            
             </div>
 
-        <div class="inline-flex rounded-md shadow-sm">
+        <span class="mt-6 inline-flex rounded-md shadow-sm">
             <button 
                 yoyo:post="register"
                 yoyo:on="click" 
@@ -51,7 +51,8 @@
                 >
                 Submit
             </button>
-        </div>
+        </span>
     </form>
+    
     
 <?php endif; ?>

@@ -10,9 +10,7 @@ class Form extends Component
 
     public $success;
 
-    public function validate()
-    {
-    }
+    public function validate() {}
 
     public function register()
     {

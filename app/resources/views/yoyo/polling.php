@@ -4,11 +4,11 @@ date_default_timezone_set($timezone);
 $time = date('h:i:s a', time());
 
 ?>
-<div class="space-x-2">
+<div class="space-x-0 sm:space-x-2  space-y-4">
   
   <div 
     yoyo:get="polling" yoyo:on="every 5s"  
-    class="inline-block font-bold bg-teal-600 text-white px-4 py-2.5 leading-5 rounded"
+    class="inline-block font-bold border-2 border-pink-400 text-pink-600 px-4 py-2.5 leading-5 rounded"
   >
     The time is <?php echo $time; ?>
   </div>

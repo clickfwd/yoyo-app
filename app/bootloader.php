@@ -29,7 +29,6 @@ $yoyo->registerComponents([
 
     // 'live-search' => App\Yoyo\LiveSearch::class,
     // 'load-more' => App\Yoyo\LoadMore::class,
-    'load-more-two' => App\Yoyo\LoadMore::class,
     // 'counter' => App\Yoyo\Counter::class,
     // 'form' => App\Yoyo\Form::class,
     // 'pagination' => App\Yoyo\Pagination::class,
