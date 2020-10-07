@@ -10,9 +10,9 @@
 <body class="">
     
     <div class="p-6 sm:p-12 max-w-3xl mx-auto flex flex-row items-center justify-between">
-        <h1 class="text-6xl font-bold text-gray-500 my-6 tracking-wider">
+        <a href="/" class="select-none text-6xl font-bold text-gray-500 my-6 tracking-wider">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">yoyo</span> <span class="text-gray-200 mx-2">|</span> app
-        </h1>
+        </a>
 
         <a href="https://github.com/clickfwd/yoyo-app">
             <svg class="w-8 h-8 text-gray-600 hover:text-pink-600 transition duration-500 ease-in-out" viewBox="0 0 24 24" fill="currentColor">
