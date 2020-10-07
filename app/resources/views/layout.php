@@ -126,7 +126,7 @@
 
     </div>
 
-    <div class="py-8 w-full flex"><p class="text-sm text-gray-500 mx-auto">© ClickFWD <?php echo date('Y'); ?></p></div>
+    <div class="py-8 w-full flex"><p class="text-sm text-gray-500 mx-auto">© <?php echo date('Y'); ?> ClickFWD LLC. All rights reserved.</p></div>
     
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.min.js"></script>
 
