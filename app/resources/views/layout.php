@@ -93,7 +93,11 @@
             ];
             ?>
 
-            <?php foreach ($componentList as $component): extract($component); ?>
+            <?php 
+            foreach ($componentList as $component): 
+                $attributes = $variables = [];
+                extract($component); 
+            ?>
 
             <div class="mb-20 relative">
            

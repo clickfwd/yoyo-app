@@ -5,17 +5,17 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Clickfwd\Yoyo\Yoyo;
 use Clickfwd\Yoyo\View;
 
-require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
 
 $app = AppFactory::create();
 
-require __DIR__.'/app/bootloader.php';
+require __DIR__.'/../app/bootloader.php';
 
 $app->get('/', function (Request $request, Response $response, $args) {
 
     ob_start();
     
-    include __DIR__.'/app/resources/views/layout.php';
+    include __DIR__.'/../app/resources/views/layout.php';
     
     $content = ob_get_clean();
     

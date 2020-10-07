@@ -4,7 +4,7 @@
     "@tailwindcss/ui": "^0.6.2"
   },
   "scripts": {
-    "dev": "export NODE_ENV=development && npx tailwindcss build tailwind.css -o app/resources/assets/css/main.css",
-    "prod": "export NODE_ENV=production && npx tailwindcss build tailwind.css -o app/resources/assets/css/main.css"
+    "dev": "export NODE_ENV=development && npx tailwindcss build tailwind.css -o public/assets/css/main.css",
+    "prod": "export NODE_ENV=production && npx tailwindcss build tailwind.css -o public/assets/css/main.css"
   }
 }
