@@ -4,8 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Yoyo Demo App</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css" rel="stylesheet">
+    <link href="/app/resources/assets/css/main.css" rel="stylesheet">
     <?php yoyo_scripts(); ?>
 </head>
 <body class="">
@@ -16,7 +15,7 @@
         </h1>
 
         <a href="https://github.com/clickfwd/yoyo-app">
-            <svg class="w-8 h-8 text-gray-600" viewBox="0 0 24 24" fill="currentColor">
+            <svg class="w-8 h-8 text-gray-600 hover:text-pink-600 transition duration-500 ease-in-out" viewBox="0 0 24 24" fill="currentColor">
                 <g data-name="Layer 2"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M12 1A10.89 10.89 0 0 0 1 11.77 10.79 10.79 0 0 0 8.52 22c.55.1.75-.23.75-.52v-1.83c-3.06.65-3.71-1.44-3.71-1.44a2.86 2.86 0 0 0-1.22-1.58c-1-.66.08-.65.08-.65a2.31 2.31 0 0 1 1.68 1.11 2.37 2.37 0 0 0 3.2.89 2.33 2.33 0 0 1 .7-1.44c-2.44-.27-5-1.19-5-5.32a4.15 4.15 0 0 1 1.11-2.91 3.78 3.78 0 0 1 .11-2.84s.93-.29 3 1.1a10.68 10.68 0 0 1 5.5 0c2.1-1.39 3-1.1 3-1.1a3.78 3.78 0 0 1 .11 2.84A4.15 4.15 0 0 1 19 11.2c0 4.14-2.58 5.05-5 5.32a2.5 2.5 0 0 1 .75 2v2.95c0 .35.2.63.75.52A10.8 10.8 0 0 0 23 11.77 10.89 10.89 0 0 0 12 1" data-name="github"/></g>
             </svg>        
         </a>
@@ -96,25 +95,31 @@
 
             <?php foreach ($componentList as $component): extract($component); ?>
 
-            <h2 class="mt-10 sm:-ml-4 text-2xl font-medium tracking-wide text-gray-600"><?php echo $heading; ?></h2>
+            <div class="mb-20 relative">
+           
+                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-blue-400 shadow-lg transform -skew-y-3 sm:skew-y-0 sm:-rotate-3 sm:rounded-lg"></div>
 
-            <div class="bg-white p-6 my-4 shadow-lg rounded">
+                <div class="relative bg-white p-6 sm:p-10 my-4 shadow-lg sm:rounded-lg">
 
-                <?php echo yoyo_render($name, $variables ?? [], $attributes ?? []); ?>
-            
-                <?php if ($name == 'counter'): ?>
-                <div class="bg-gray-50 mt-6 p-3 text-gray-700 font-medium py-3">
-                    Count : <span 
-                    x-data="{ count: 0 }" 
-                    @counter:updated.window="count = $event.detail" 
-                    x-text="count"
-                    ></span>
-                    <span class="ml-3 italic text-gray-600">updated with Alpine JS using server-emitted event</span>
+                    <h2 class="mb-8 text-2xl font-medium tracking-wide text-gray-900"><?php echo $heading; ?></h2>
+
+                    <?php echo yoyo_render($name, $variables ?? [], $attributes ?? []); ?>
+                
+                    <?php if ($name == 'counter'): ?>
+                    <div class="bg-gray-50 mt-6 p-3 text-gray-700 font-medium py-3">
+                        Count : <span 
+                        x-data="{ count: 0 }" 
+                        @counter:updated.window="count = $event.detail" 
+                        x-text="count"
+                        ></span>
+                        <span class="ml-3 italic text-gray-600">updated with Alpine JS using server-emitted event</span>
+                    </div>
+                    <?php endif; ?>
+
+                
                 </div>
-                <?php endif; ?>
 
-            
-            </div>
+            </div> 
             <?php endforeach; ?>
 
         </div>
