@@ -18,16 +18,16 @@
                 </svg>
             </a>
             <?php endif; ?>
-            <input yoyo:on="add-new" yoyo:post="add" x-on:keydown.enter="if($event.target.value !== '') $dispatch('add-new')" name="task" class="block w-full form-input" placeholder="What needs to be done?" <?php echo !$this->editing && $spinning ? 'autofocus' : ''; ?>>
+            <input yoyo:on="add-new" yoyo:post="add" x-on:keydown.enter="if($event.target.value !== '') $dispatch('add-new')" name="task" class="block w-full form-input" placeholder="What needs to be done?" <?php echo ! $this->editing && $spinning ? 'autofocus' : ''; ?>>
         </div>        
     </header>
 
     <?php if ($this->entries): ?>
     <section class="my-6">
         <ul class="space-y-2">
-            <?php 
-            foreach ($this->entries as $entry): 
-            $status = $entry['status']; 
+            <?php
+            foreach ($this->entries as $entry):
+            $status = $entry['status'];
             ?>
             <li class="space-x-2">
                 <?php if ($this->editing == $entry['id']): ?>
@@ -41,7 +41,7 @@
                 <?php else: ?>
                     <div 
                         yoyo:vars="id:<?php echo $entry['id']; ?>"
-                        class="group flex space-x-4 items-center group py-2 px-4 border border-gray-300 bg-gray-50 sm:rounded-md <?php echo $status == 'completed' ? 'completed' : '';?> <?php echo $this->editing == $entry['id'] ? 'editing' : ''; ?>">
+                        class="group flex space-x-4 items-center group py-2 px-4 border border-gray-300 bg-gray-50 sm:rounded-md <?php echo $status == 'completed' ? 'completed' : ''; ?> <?php echo $this->editing == $entry['id'] ? 'editing' : ''; ?>">
                         
                         <input yoyo:get="toggle" class="form-checkbox" type="checkbox" <?php echo $status == 'completed' ? 'checked' : ''; ?> />
                         
@@ -71,7 +71,7 @@
         <div class="flex-1 flex flex-row space-x-4 justify-center items-center">
             <span class="inline-flex rounded-md shadow-sm">
                 <button yoyo:get="render" yoyo:vars="filter:''" type="button" 
-                    class="<?php  echo !$filter ? 'text-gray-700' : 'text-gray-400'; ?> inline-flex items-center px-2.5 py-1.5 border border-gray-300 text-xs leading-4 font-medium rounded bg-white focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150">
+                    class="<?php  echo ! $filter ? 'text-gray-700' : 'text-gray-400'; ?> inline-flex items-center px-2.5 py-1.5 border border-gray-300 text-xs leading-4 font-medium rounded bg-white focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150">
                     All
                 </button>
             </span>

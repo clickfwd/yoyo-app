@@ -14,8 +14,7 @@ class Upload extends Component
             return '';
         }
 
-        if (! $this->isImage($_FILES['photo']))
-        {
+        if (! $this->isImage($_FILES['photo'])) {
             $this->error = 'Not a valid image';
 
             return;
@@ -35,14 +34,13 @@ class Upload extends Component
 
     protected function isImage($file)
     {
-        $whitelist_type = ['image/jpeg', 'image/png','image/gif'];
-        
+        $whitelist_type = ['image/jpeg', 'image/png', 'image/gif'];
+
         $error = null;
 
         $fileinfo = finfo_open(FILEINFO_MIME_TYPE);
-    
-        if (in_array(finfo_file($fileinfo, $file['tmp_name']), $whitelist_type)) 
-        {
+
+        if (in_array(finfo_file($fileinfo, $file['tmp_name']), $whitelist_type)) {
             return true;
         }
 

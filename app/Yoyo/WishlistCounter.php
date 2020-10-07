@@ -9,9 +9,9 @@ class WishlistCounter extends Component
     public $likes = 0;
 
     protected $listeners = [
-        'liked' => 'addedToWishList', 
-        'disliked' => 'removedFromWishList', 
-        'reset-likes' => 'reset'
+        'liked' => 'addedToWishList',
+        'disliked' => 'removedFromWishList',
+        'reset-likes' => 'reset',
     ];
 
     protected function addedToWishList()

@@ -13,7 +13,7 @@ class Counter extends Component
     public function increment()
     {
         $this->count++;
-        
+
         $this->dispatchBrowserEvent('counter:updated', $this->count);
     }
 
