@@ -25,7 +25,7 @@ class LiveSearch extends Component
 
         if ($this->q) {
             foreach ($this->data as $data) {
-                if (strstr(strtolower($data['title']), $this->q)) {
+                if (stristr($data['title'], $this->q)) {
                     $results[] = $data;
                 }
             }
