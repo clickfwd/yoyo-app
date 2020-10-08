@@ -994,8 +994,8 @@ video {
   font-size: 1.5rem;
 }
 
-.text-6xl {
-  font-size: 4rem;
+.text-3xl {
+  font-size: 1.875rem;
 }
 
 .leading-4 {
@@ -1332,6 +1332,13 @@ video {
   letter-spacing: 0.05em;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1506,6 +1513,10 @@ video {
     font-size: 0.875rem;
   }
 
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+  }
+
   .sm\:leading-5 {
     line-height: 1.25rem;
   }
@@ -1540,13 +1551,13 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:text-6xl {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
   }
-}
-
-@media (min-width: 1280px) {
 }

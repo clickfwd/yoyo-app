@@ -4,6 +4,7 @@ module.exports = {
 		purgeLayersByDefault: true,
 	},
 	purge: {
+		mode: 'all',
 		enabled: process.env.NODE_ENV == 'production',
 		content: [
 			'./app/resources/views/*.php',
@@ -27,9 +28,5 @@ module.exports = {
 		},
 	},
 	variants: {},
-	plugins: [
-		require('tailwindcss'),
-		require('autoprefixer'),
-		require('@tailwindcss/ui'),
-	],
+	plugins: [require('tailwindcss'), require('@tailwindcss/ui')],
 }
