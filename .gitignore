@@ -2,5 +2,5 @@ vendor
 node_modules
 .php_cs.cache
 composer.lock
-yarn.lock
 package-lock.json
+yarn.lock
