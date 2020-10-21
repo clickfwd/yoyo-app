@@ -3,9 +3,9 @@
     <?php if (empty($results)): ?>
         No results
     <?php else: ?>
-        <ul class="space-y-3">
+        <ul class="border divide-y shadow-lg rounded-lg overflow-hidden">
         <?php foreach ($results as $entry): ?>
-            <li class="py-2 px-4 border border-gray-300 bg-gray-50 sm:rounded-md">
+            <li class="py-4 px-6 bg-gray-50 ">
                 <p><?php echo $entry['title']; ?></p>
             </li>
         <?php endforeach; ?>

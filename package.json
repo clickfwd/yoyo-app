@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "tailwindcss": "^1.8.11",
-    "@tailwindcss/ui": "^0.6.2"
+    "@tailwindcss/typography": "github:tailwindcss/typography",
+    "@tailwindcss/ui": "^0.6.2",
+    "tailwindcss": "^1.8.11"
   },
   "scripts": {
     "dev": "export NODE_ENV=development && npx tailwindcss build tailwind.css -o public/assets/css/main.css",
