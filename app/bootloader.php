@@ -12,9 +12,9 @@ $yoyo->configure([
   'namespace' => 'App\\Yoyo\\',
 ]);
 
-$view = new YoyoViewProvider(new View(__DIR__.'/resources/views/yoyo'));
-
-$yoyo->setViewProvider($view);
+$yoyo->registerViewProvider(function() {
+  return new YoyoViewProvider(new View(__DIR__.'/resources/views/yoyo'));
+});
 
 $yoyo->registerComponents([
     // If anonymous component name matches template name, no need to register

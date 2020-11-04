@@ -9,7 +9,7 @@ $this->emitTo('#wishlist-counter', 'reset-likes');
 
     <?php foreach ($entries as $id => $entry): ?>
         
-        <?php echo yoyo_render('wishlist', ['id' => $id]); ?>
+        <?php echo Yoyo\yoyo_render('wishlist', ['id' => $id]); ?>
     
     <?php endforeach; ?>
 
