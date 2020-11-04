@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Yoyo Demo App</title>
     <link href="/assets/css/main.css" rel="stylesheet">
-    <?php yoyo_styles(); ?>
-    <?php yoyo_scripts(); ?>
+    <?php Yoyo\yoyo_styles(); ?>
+    <?php Yoyo\yoyo_scripts(); ?>
 </head>
 
 <body>
@@ -188,7 +188,7 @@
                         </div>
 
 
-                        <?php echo yoyo_render($name, $variables ?? [], $attributes ?? []); ?>
+                        <?php echo Yoyo\yoyo_render($name, $variables ?? [], $attributes ?? []); ?>
 
                         <?php if ($name == 'counter'): ?>
                         <div
