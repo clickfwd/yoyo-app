@@ -28,7 +28,7 @@
                 <nav class="relative z-0 inline-flex shadow-sm">
                     <?php if ($this->previous): ?>
                     <a href="?page=<?php echo $this->previous; ?>" 
-                        yoyo:vars="page:<?php echo $this->previous; ?>" 
+                        yoyo:val.page="<?php echo $this->previous; ?>" 
                         class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="Previous">
                     <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -37,7 +37,7 @@
                     <?php endif; ?>
                     <?php for ($i = 1; $i <= $pages; $i++): ?>
                     <a href="?page=<?php echo $i; ?>" 
-                        yoyo:vars="page:<?php echo $i; ?>" 
+                    yoyo:val.page="<?php echo $i; ?>" 
                         class="
                             <?php echo $page == $i ? 'text-pink-600 hover:text-pink-600' : ''; ?> 
                             <?php echo $i == 1 && ! $this->previous ? 'rounded-l-md' : ''; ?>
@@ -49,7 +49,7 @@
                     <?php endfor; ?>
                     <?php if ($this->next): ?>
                     <a href="?page=<?php echo $this->next; ?>" 
-                        yoyo:vars="page:<?php echo $this->next; ?>" 
+                        yoyo:val.page="<?php echo $this->next; ?>" 
                         class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="Next"
                     >
                         <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

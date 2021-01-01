@@ -18,6 +18,5 @@
         </button>
     </span>
 
-
     <span class="font-bold"><?php echo $count; ?></span>
 </div>

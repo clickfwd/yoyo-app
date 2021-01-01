@@ -2,7 +2,7 @@
     "name": "clickfwd/yoyo-app",
     "description": "Yoyo demo app.",
     "keywords": ["yoyo","framework","reactive","dynamic"],
-    "version": "0.2.1",
+    "version": "0.3.0",
     "license": "MIT",
     "homepage": "https://github.com/clickfwd/yoyo-app",
     "support": {
@@ -17,7 +17,7 @@
     "require": {
         "slim/slim": "4.*",
         "slim/psr7": "^1.2",
-        "clickfwd/yoyo": "^0.4.0"
+        "clickfwd/yoyo": "^0.5.0"
     },
     "require-dev": {
     },

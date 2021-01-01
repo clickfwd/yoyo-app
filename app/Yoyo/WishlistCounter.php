@@ -8,6 +8,8 @@ class WishlistCounter extends Component
 {
     public $likes = 0;
 
+    protected $props = ['likes'];
+
     protected $listeners = [
         'liked' => 'addedToWishList',
         'disliked' => 'removedFromWishList',

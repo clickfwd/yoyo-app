@@ -12,8 +12,8 @@ $yoyo->configure([
   'namespace' => 'App\\Yoyo\\',
 ]);
 
-$yoyo->registerViewProvider(function() {
-  return new YoyoViewProvider(new View(__DIR__.'/resources/views/yoyo'));
+$yoyo->registerViewProvider(function () {
+    return new YoyoViewProvider(new View(__DIR__.'/resources/views/yoyo'));
 });
 
 $yoyo->registerComponents([
