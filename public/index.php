@@ -9,6 +9,8 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = AppFactory::create();
 
+$yoyo = new Yoyo();
+
 require __DIR__.'/../app/bootloader.php';
 
 $app->get('/', function (Request $request, Response $response, $args) {
@@ -28,7 +30,7 @@ $app->any('/yoyo', function (Request $request, Response $response, $args)
 {
   // Routing to component name → action
 
-  $output = (new Yoyo())->update();
+  $output = Yoyo::getInstance()->update();
   
   $response->getBody()->write($output);
   
