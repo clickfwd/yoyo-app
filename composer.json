@@ -25,11 +25,5 @@
         "psr-4": {
             "App\\": "app"
         }
-    },
-    "repositories": [
-        {
-            "type" : "path",
-            "url" : "/Users/alejandro/ClickFWD Dev/Git repositories/yoyo/yoyo"
-        }   
-    ]    
+    }
 }
