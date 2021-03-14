@@ -10,6 +10,8 @@ class Todo extends Component
 
     public $task;
 
+    public $taskNew;
+
     public $filter;
 
     protected $queryString = ['filter'];
@@ -35,7 +37,7 @@ class Todo extends Component
 
     public function add()
     {
-        if ($task = trim($this->task)) {
+        if ($task = trim($this->taskNew)) {
             $this->list[] = ['id'=> $this->getNextId(), 'title' => $task, 'status' => 'active'];
         }
     }

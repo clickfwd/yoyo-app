@@ -2,7 +2,7 @@
 $entries = require __DIR__.'/../../../test-data.php';
 $entry = $entries[$id];
 $liked = $liked ?? false;
-$this->emitTo('#wishlist-counter', $liked ? 'liked' : 'disliked');
+$this->emitToWithSelector('#wishlist-counter', $liked ? 'liked' : 'disliked');
 ?>
 
 <div yoyo:val.id="<?php echo $id; ?>" class="my-3 flex flex-row items-center space-x-3 py-2 px-4 border border-gray-300 bg-gray-50 sm:rounded-md">

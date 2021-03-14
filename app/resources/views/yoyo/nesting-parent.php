@@ -3,7 +3,7 @@ $entries = require __DIR__.'/../../../test-data.php';
 $keys = array_rand($entries, 3);
 $entries = array_intersect_key($entries, array_flip($keys));
 
-$this->emitTo('#wishlist-counter', 'reset-likes');
+$this->emitToWithSelector('#wishlist-counter', 'reset-likes');
 ?>
 <div>
 

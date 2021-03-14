@@ -57,7 +57,7 @@ class Pagination extends Component
         return $this->page > 1 ? $this->page - 1 : false;
     }
 
-    public function beforeRender()
+    public function rendering()
     {
         $this->pages = $pages = count(array_chunk($this->data, $this->limit));
     }
