@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4550b5ceda3e60c14036bb0da3b5877",
+    "content-hash": "276b22b53ff80240e903e0729c03aa72",
     "packages": [
         {
             "name": "clickfwd/yoyo",
             "version": "0.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clickfwd/yoyo.git",
+                "reference": "244741d20cb88dd9cfad1bd7a63d0680eb5ef855"
+            },
             "dist": {
-                "type": "path",
-                "url": "/Users/alejandro/ClickFWD Dev/Git repositories/yoyo/yoyo",
-                "reference": "cc21c9e4aefb5caf8c407eb374addd87d715cc21"
+                "type": "zip",
+                "url": "https://api.github.com/repos/clickfwd/yoyo/zipball/244741d20cb88dd9cfad1bd7a63d0680eb5ef855",
+                "reference": "244741d20cb88dd9cfad1bd7a63d0680eb5ef855",
+                "shasum": ""
             },
             "require": {
                 "illuminate/container": "^8.0",
@@ -35,12 +41,7 @@
                     "Clickfwd\\Yoyo\\": "src/yoyo"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\App\\": "tests/app",
-                    "Tests\\AppAnother\\": "tests/app-another"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -59,9 +60,7 @@
                 "issues": "https://github.com/Clickfwd/yoyo/issues",
                 "source": "https://github.com/Clickfwd/yoyo"
             },
-            "transport-options": {
-                "relative": false
-            }
+            "time": "2021-03-14T15:23:45+00:00"
         },
         {
             "name": "fig/http-message-util",
