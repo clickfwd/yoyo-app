@@ -1,6 +1,4 @@
 vendor
 node_modules
 .php_cs.cache
-composer.lock
-package-lock.json
 yarn.lock
