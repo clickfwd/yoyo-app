@@ -17,7 +17,7 @@
     "require": {
         "slim/slim": "4.*",
         "slim/psr7": "^1.2",
-        "clickfwd/yoyo": "^0.7"
+        "clickfwd/yoyo": "^0.7.1"
     },
     "require-dev": {
     },
@@ -25,5 +25,11 @@
         "psr-4": {
             "App\\": "app"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type" : "path",
+            "url" : "/Users/alejandro/ClickFWD Dev/Git repositories/yoyo/yoyo"
+        }   
+    ]    
 }
