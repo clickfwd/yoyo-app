@@ -1,13 +1,11 @@
 <div>
-    <form class="flex flex-col space-y-4 w-72"     
-        >  
+    <form class="flex flex-col space-y-4 w-72" yoyo:trigger="input" yoyo:sync="this:replace">  
             <div class="mt-1 relative rounded-md shadow-sm">
-                <input id="q" 
-                    name="q"
-                    yoyo:on="keyup delay:300ms changed"
+                <input type="text" id="q" 
+                    name="q"                    
                     value="<?php echo $q ?? ''; ?>"
                     class="form-input block w-full sm:text-sm sm:leading-5" placeholder="Search"
-                >
+                />
             </div>
     </form>
 

@@ -8,7 +8,10 @@
         
     <?php if ($this->results): ?>
         <span class="inline-flex rounded-md shadow-sm">
-            <button
+            <button 
+                type="button"
+                yoyo:get="render"
+                yoyo:trigger="click"
                 yoyo:val.offset="<?php echo $offset + $limit; ?>" 
                 yoyo:target="closest span" 
                 yoyo:swap="outerHTML"
